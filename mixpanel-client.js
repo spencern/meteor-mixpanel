@@ -1,12 +1,12 @@
 (function (document, mixpanel) {
-    window.mixpanel = mixpanel; 
+    window.mixpanel = mixpanel;
 
     var loadScript = function() {
         var script, firstScript;
         script = document.createElement("script");
         script.type = "text/javascript";
         script.async = !0;
-        script.src = ("https:" === document.location.protocol ? "https:" : "http:") +
+        script.src = ("https:" === document.location.protocol ? "https:" : "https:") +
             '//cdn.mxpnl.com/libs/mixpanel-2.2.min.js';
         firstScript = document.getElementsByTagName("script")[0];
         firstScript.parentNode.insertBefore(script, firstScript);
@@ -16,16 +16,16 @@
 
     var createCommands = function(mixpanelTracker) {
         var commands = [
-            'disable', 
-            'track', 
-            'track_pageview', 
+            'disable',
+            'track',
+            'track_pageview',
             'track_links',
-            'track_forms', 
-            'register', 
-            'register_once', 
-            'unregister', 
-            'identify', 
-            'alias', 
+            'track_forms',
+            'register',
+            'register_once',
+            'unregister',
+            'identify',
+            'alias',
             'name_tag',
             'set_config'
         ];
