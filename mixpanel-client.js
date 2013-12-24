@@ -6,7 +6,7 @@
         script = document.createElement("script");
         script.type = "text/javascript";
         script.async = !0;
-        script.src = ("https:" === document.location.protocol ? "https:" : "https:") +
+        script.src = ("https:" === document.location.protocol ? "https:" : "http:") +
             '//cdn.mxpnl.com/libs/mixpanel-2.2.min.js';
         firstScript = document.getElementsByTagName("script")[0];
         firstScript.parentNode.insertBefore(script, firstScript);
